@@ -7,5 +7,5 @@ let userSelection;
 
 possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener("click",(e)=>{
     userSelection=e.target.id;
-    userChoice.innerHTML=userSelection;
+    userChoice.innerHTML= "You selected "+userSelection;
 }))
