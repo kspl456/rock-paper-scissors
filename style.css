@@ -1,0 +1,129 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- BODY ---------- */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2, h3 {
+    margin: 8px 0;
+    text-align: center;
+}
+
+/* ---------- GAME IMAGE ---------- */
+.game-image {
+    margin: 15px 0;
+}
+
+/* ---------- START BUTTON ---------- */
+.start-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.start-btn:hover {
+    background: #ffd633;
+    transform: scale(1.05);
+}
+
+/* ---------- SELECTION AREA ---------- */
+.selection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ---------- SCOREBOARD ---------- */
+.scoreboard {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* ---------- GAME BUTTONS ---------- */
+.button {
+    padding: 10px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ---------- RESULTS SECTION ---------- */
+.results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ---------- RESULT IMAGES ---------- */
+#user-img,
+#computer-img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+/* ---------- RESULT TEXT ---------- */
+#result {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* ---------- REPLAY BUTTON ---------- */
+.replay-btn {
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #00e676;
+    color: #003300;
+    transition: transform 0.2s ease;
+}
+
+.replay-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- HIDDEN ELEMENTS (INITIAL STATE) ---------- */
+.selection,
+#user-img,
+#computer-img,
+#result,
+.replay-btn {
+    display: none;
+}
