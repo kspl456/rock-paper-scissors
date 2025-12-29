@@ -2,27 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scisscors</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Play Rock-Paper-Scisscors with me!</h1>
-    <img src="" alt="Rock Paper Scissors" class="game-image">
+    <img src="./images/favicon.png" alt="Rock Paper Scissors" class="game-image" height="200" width="200">
     <button class="start-btn">Start game</button>
     <div class="selection">
-        <h2 class="after-start">Choose your weapon: Rock, Paper, or Scissors?</h2>
+        <div class="scoreboard">
+            <h3>Round: <span id="round">1</span></h3>
+            <h3>You: <span id="user-score">0</span></h3>
+            <h3>Computer: <span id="computer-score">0</span></h3>
+        </div>        
+        <h2 class="after-start">Choose your weapon</h2>
         <h1><span id="user-choice"></span></h1>
         <h1><span id="computer-choice"></span></h1>
-        <h1><span id="result"></span> </h1>
         <button class="button" id="rock">Rock</button>
         <button class="button" id="paper">Paper</button>
         <button class="button" id="scissors">Scissors</button>
+        <button class="replay-btn">Replay</button>
     </div>
-
-
-
-
+    <div class="results">
+          <img id="user-img" alt="Your Choice">
+          <img id="computer-img" alt="Computer Choice">
+          <h2 id="result"></h2>
+    </div>
+    
     <script src="script.js" charset="UTF-8"></script>
 </body>
 </html>
